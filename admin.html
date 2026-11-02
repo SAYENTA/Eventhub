@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventHub | Admin Panel</title>
+</head>
+<body>
+  <header>
+    <h1>EventHub Admin</h1>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="events.html">Events</a> |
+      <a href="event-details.html">Details</a> |
+      <a href="register.html">Register</a> |
+      <a href="my registration.html">My Tickets</a> |
+      <a href="admin.html">Admin</a>
+    </p>
+  </header>
+
+  <main>
+    <h1>Admin Dashboard</h1>
+    <p>Manage events and view registrations.</p>
+
+    <section>
+      <h2>Summary</h2>
+      <ul>
+        <li>Total Events: <strong id="totalEvents">0</strong></li>
+        <li>Total Registrations: <strong id="totalRegistrations">0</strong></li>
+        <li>Upcoming Events: <strong id="upcomingEvents">0</strong></li>
+        <li>Cancelled Registrations: <strong id="cancelledRegistrations">0</strong></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>All Registrations</h2>
+      <table id="registrationsTable">
+        <thead>
+          <tr>
+            <th>Booking ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Event</th>
+            <th>Ticket Type</th>
+            <th>Qty</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody id="registrationsBody">
+          <!-- Rows will be added by JS later -->
+        </tbody>
+      </table>
+      <p id="noRegistrations">No registrations yet.</p>
+    </section>
+
+    <section>
+      <h2>Manage Events</h2>
+      <table id="eventsTable">
+        <thead>
+          <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="eventsBody">
+          <!-- Rows will be added by JS later -->
+        </tbody>
+      </table>
+      <p id="noEvents">No events yet.</p>
+    </section>
+  </main>
+</body>
+</html>

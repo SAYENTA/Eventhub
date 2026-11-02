@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventHub | My Registrations</title>
+</head>
+<body>
+  <header>
+    <h1>EventHub</h1>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="events.html">Events</a> |
+      <a href="event-details.html">Details</a> |
+      <a href="register.html">Register</a> |
+      <a href="my registration.html">My Tickets</a> |
+      <a href="admin.html">Admin</a>
+    </p>
+  </header>
+
+  <main>
+    <h1>My Registrations</h1>
+    <p>Below are the events you have registered for.</p>
+
+    <!-- JS will populate this table -->
+    <table id="registrationsTable">
+      <thead>
+        <tr>
+          <th>Booking ID</th>
+          <th>Event</th>
+          <th>Date</th>
+          <th>Ticket Type</th>
+          <th>Quantity</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="registrationsBody">
+        <!-- Rows will be added by JS later -->
+      </tbody>
+    </table>
+
+    <!-- Empty-state message (visible by default) -->
+    <p id="emptyMessage">You have no registrations yet.</p>
+
+    <p>
+      <a href="events.html">Browse Events</a> |
+      <a href="register.html">Register for an Event</a>
+    </p>
+  </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventHub | Login</title>
+</head>
+<body>
+  <header>
+    <h1>EventHub</h1>
+  </header>
+
+  <main>
+    <h1>Login</h1>
+    <p>Enter your credentials to access your account.</p>
+
+    <form id="loginForm" action="#" method="post">
+      <fieldset>
+        <legend>Account Information</legend>
+
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+        </p>
+
+        <p>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required placeholder="Enter your password">
+        </p>
+
+        <p>
+          <label for="role">Login As:</label>
+          <select id="role" name="role" required>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+          </select>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Login</button>
+        <button type="reset">Clear</button>
+      </p>
+    </form>
+
+    <p>Don't have an account? <a href="signup.html">Sign up here</a></p>
+  </main>
+</body>
+</html>
