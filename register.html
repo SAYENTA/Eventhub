@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EventHub | Register</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -22,7 +23,7 @@
     <h1>Event Registration</h1>
     <p>Fill in the form below to register for an event.</p>
 
-    <form action="#" method="post">
+    <form action="#" method="post" novalidate>
       <fieldset>
         <legend>Personal Information</legend>
 
@@ -49,12 +50,6 @@
           <label for="event">Choose Event:</label>
           <select id="event" name="event" required>
             <option value="">-- Select an event --</option>
-            <option value="summer-beats">Summer Beats Festival (Jul 15)</option>
-            <option value="tech-summit">Tech Innovators Summit (Aug 02)</option>
-            <option value="art-expo">Art & amp; Craft Expo (Sep 10)</option>
-            <option value="food-carnival">Food Carnival (Oct 05)</option>
-            <option value="marathon">City Marathon 2025 (Nov 12)</option>
-            <option value="film-screening">Indie Film Screening (Dec 01)</option>
           </select>
         </p>
 
@@ -85,7 +80,7 @@
         <p>
           <label>
             <input type="checkbox" id="terms" name="terms" required>
-            I agree to the terms & amp; conditions.
+            I agree to the terms &amp; conditions.
           </label>
         </p>
       </fieldset>
@@ -96,5 +91,8 @@
       </p>
     </form>
   </main>
+
+  <script src="js/events.js"></script>
+  <script src="js/register.js"></script>
 </body>
 </html>

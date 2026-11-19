@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EventHub | Admin Panel</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -46,9 +47,7 @@
             <th>Status</th>
           </tr>
         </thead>
-        <tbody id="registrationsBody">
-          <!-- Rows will be added by JS later -->
-        </tbody>
+        <tbody id="registrationsBody"></tbody>
       </table>
       <p id="noRegistrations">No registrations yet.</p>
     </section>
@@ -64,12 +63,13 @@
             <th>Actions</th>
           </tr>
         </thead>
-        <tbody id="eventsBody">
-          <!-- Rows will be added by JS later -->
-        </tbody>
+        <tbody id="eventsBody"></tbody>
       </table>
       <p id="noEvents">No events yet.</p>
     </section>
   </main>
+
+  <script src="js/events.js"></script>
+  <script src="js/admin.js"></script>
 </body>
 </html>

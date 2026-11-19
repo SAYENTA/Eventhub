@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EventHub | Event Details</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -19,47 +20,40 @@
   </header>
 
   <main>
-    <h1>Summer Beats Festival</h1>
-    <p>An unforgettable evening of music, food and fun!</p>
+    <!-- Single-event view (used when ?id= is present) -->
+    <div id="singleView" style="display:none;">
+      <h1 id="eventTitle">Loading...</h1>
+      <p id="eventTagline"></p>
 
-    <section>
-      <h2>Event Information</h2>
-      <ul>
-        <li><strong>Date:</strong> July 15, 2025</li>
-        <li><strong>Time:</strong> 6:00 PM – 11:00 PM</li>
-        <li><strong>Location:</strong> Mumbai, Maharashtra</li>
-        <li><strong>Price:</strong> ₹999 onwards</li>
-      </ul>
-    </section>
+      <section>
+        <h2>Event Information</h2>
+        <ul>
+          <li><strong>Date:</strong> <span id="eventDate">—</span></li>
+          <li><strong>Location:</strong> <span id="eventLocation">—</span></li>
+        </ul>
+      </section>
 
-    <section>
-      <h2>About the Event</h2>
-      <p>The Summer Beats Festival is the city's most anticipated music event of the year. Featuring top artists from across the country, electrifying performances, and an atmosphere you won't forget. Whether you're a fan of rock, pop, or indie, there's something for everyone.</p>
-    </section>
+      <section>
+        <h2>Actions</h2>
+        <p>
+          <a id="registerLink" href="register.html">Register Now</a> |
+          <a href="event-details.html">See All Event Details</a> |
+          <a href="events.html">Back to Events</a>
+        </p>
+      </section>
+    </div>
 
-    <section>
-      <h2>What's Included</h2>
-      <ul>
-        <li>Access to all main stage performances</li>
-        <li>Food court with 20+ vendors</li>
-        <li>Complimentary welcome drink</li>
-        <li>Free parking for ticket holders</li>
-        <li>Meet & amp; greet with select artists</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Terms & amp; Conditions</h2>
-      <p>Tickets are non-refundable. Please carry a valid ID proof. Outside food and beverages are not allowed. Entry closes 30 minutes after the start time.</p>
-    </section>
-
-    <section>
-      <h2>Actions</h2>
-      <p>
-        <a href="register.html">Register Now</a> |
-        <a href="events.html">Back to Events</a>
-      </p>
-    </section>
+    <!-- All-events view (used when no ?id=) -->
+    <div id="listView">
+      <h1>All Event Details</h1>
+      <p>Pick an event to see full details.</p>
+      <section id="detailsList">
+        <!-- JS renders list here -->
+      </section>
+    </div>
   </main>
+
+  <script src="js/events.js"></script>
+  <script src="js/event-details.js"></script>
 </body>
 </html>
